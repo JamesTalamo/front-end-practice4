@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Tip calculator app</title>
+</head>
+<body>
+  <div class="main-tamplate">
+    <div class="main-template-content">
+      <div class="main-template left-temp">
+        <div class="small-template ">
+            <div class="color-grey">
+              <p>Bill</p>
+            </div>
+            <input type="number" class="input-form" placeholder="$ 0.00" id="bill-input">
+        </div>
+        <div class="medium-template ">
+          <div class="color-grey">
+            <p>Select tip %</p>
+          </div>
+          <div class="button-box-left">
+            <div class="row1">
+              <button class="color-white button-box-btn" id='per5'><p>5%</p></button>
+              <button class="color-white button-box-btn" id="per25"><p>25%</p></button>
+            </div>
+            <div class="row1">
+              <button class="color-white button-box-btn" id="per10"><p>10%</p></button>
+              <button class="color-white button-box-btn" id="per50"><p>50%</p></button>
+            </div>
+            <div class="row1">
+              <button class="color-white button-box-btn" id="per15"><p>15%</p></button>
+              <input type="number" placeholder="custom" id='custom'>
+            </div>
+          </div>
+        </div>
+        <div class="small-template">
+          <div class="color-grey">
+            <p>Number of people</p>
+          </div>
+          <input type="number" class="input-form" placeholder="add people" id="input-add-people">
+        </div>
+      </div>
+
+      <div class="main-template right-temp">
+        <div class="right-temp-content">
+          <div class="right-content top-amount">
+            <div class="contnets-inside left">
+              <p class="color-white">Tip amount</p>
+              <p class="color-grey">/ per person</p>
+            </div>
+            <div class="contnets-inside output right"> <h1 id="add-output">$ 0.00</h1> </div>
+          </div>
+          <div class="right-content total">
+            <div class="contnets-inside left">
+              <p class="color-white">Total</p>
+              <p class="color-grey">/ per person</p>
+            </div>
+            <div class="contnets-inside output right"> <h1 id="bill-output">$ 0.00</h1> </div>
+          </div>
+        </div>
+        <div></div>
+        <button id="btn-reset">RESET</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="javascript.js"></script>
+</body>
+</html>
